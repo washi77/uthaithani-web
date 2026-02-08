@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แนะนำสถานที่ท่องเที่ยว</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #0f172a;
+    --secondary: #475569;
+    --heading: #1e293b; /* สีหัวข้อทึบ */
+    --bg: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+}
+
+/* HERO (ลดขนาดแล้ว) */
+.hero {
+    height: 60vh;
+    min-height: 360px;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://ak-d.tripcdn.com/images/1mi1t2224ux2h3t000C9C_W_640_0_R5_Q80.jpg?proc=source/trip')
+        center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* SECTION (กระชับ) */
+.section {
+    padding: 40px 20px;
+}
+
+.section.light {
+    background: #ffffff;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 14px;
+    color: var(--heading);
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: var(--secondary);
+    line-height: 1.7;
+}
+
+/* GALLERY */
+.gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+
+/* INFO */
+.info-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.info-item {
+    background: #f1f5f9;
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.info-item span {
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.info-item strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 22px;
+    background: #0f172a;
+    color: #cbd5f5;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        height: 45vh;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 32px 16px;
+    }
+
+    .gallery img {
+        height: 160px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>วัดสังกัสรัตนคีรี</h1>
+        <p>วัดนี้มีความโดดเด่นตรงบันไดพญานาค ที่ทอดยาวลงมาจน เป็นที่รู้จักของคนไทย</p>
+    </div>
+</section>
+
+<!-- DETAIL -->
+<section class="section light">
+    <h2>รายละเอียดสถานที่ท่องเที่ยว</h2>
+    <p>
+       วัดสังกัสรัตนคีรีตั้งอยู่เชิงเขาสะแกกรัง สุดถนนท่าช้าง ในเขตเทศบาลเมือง 
+       ภายในวิหารเป็นที่ประดิษฐานพระพุทธมงคลศักดิ์สิทธิ์ ซึ่งเป็นพระพุทธรูปคู่บ้านคู่เมืองอุทัยธานี 
+       มีประวัติว่าในสมัยพระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราชโปรดเกล้าฯ 
+       ให้นำพระพุทธรูปขนาดย่อมที่ชำรุดไปไว้ตามหัวเมืองต่างๆ สำหรับเมืองอุทัยธานีได้รับ 3 องค์ 
+       โดยอัญเชิญลงแพมาขึ้นฝั่งที่ท่าพระ (ตรงข้ามศาลาประชาคมจังหวัดอุทัยธานี) แล้วนำมาประดิษฐานไว้ที่วัดขวิด
+        พระพุทธรูปองค์หนึ่งมีขนาดใหญ่เป็นพระเนื้อสำริดปางมารวิชัย หน้าตักกว้าง 3 ศอก สร้างในสมัยพระเจ้าลิไท 
+        ฝีมือช่างสุโขทัยยุค 2 มีส่วนเศียรกับส่วนองค์พระเป็นคนละองค์ เข้าใจว่าคงซ่อมเป็นองค์เดียวกันก่อนนำมาไว้ที่เมืองอุทัยธานี 
+        ต่อมาเมื่อยุบวัดขวิดไปรวมกับวัดทุ่งแก้ว จึงได้ย้ายพระพุทธรูปองค์นี้ไปไว้ที่วัดสังกัสรัตนคีรี ซึ่งอยู่ห่างจากตัวเมืองไป 1 กิโลเมตร 
+        และได้ทำพิธีบรรจุพระบรมสารีริกธาตุไว้ในพระเศียร พร้อมกับถวายนามว่า พระพุทธมงคลศักดิ์สิทธิ์ ในวันแรม 1 ค่ำเดือน 11 ของทุกปีจะมีประเพณีตักบาตรเทโว 
+       โดยพระสงฆ์ประมาณ 500 รูปจะเดินลงบันไดจากยอดเขาสะแกกรังมารับบิณฑบาตที่ลานวัดเป็นประเพณีที่สำคัญของจังหวัด
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+    <h2>ภาพบรรยากาศ</h2>
+    <div class="gallery">
+        <img src="https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT610061/1.jpeg">
+        <img src="https://www.gplace.com/include/img_res/2/38/gp5d1db727b89c7.jpg">
+        <img src="https://f.tpkcdn.com/review-source/5178767b-dd0d-f99b-2176-52aaaf156c44.jpg">
+        <img src="https://www.dooasia.com/wp-content/uploads/2014/12/watsangkatrattanakiri.jpg">
+    </div>
+</section>
+
+<!-- INFO -->
+<section class="section light">
+    <h2>ข้อมูลการเข้าชม</h2>
+    <div class="info-grid">
+        <div class="info-item">
+            <span>ค่าเข้าชม</span>
+            <strong>
+                ไม่มีค่าเข้าชม
+            </strong>
+        </div>
+        <div class="info-item">
+            <span>เวลาเปิด - ปิด</span>
+            <strong>เปิดทำการทุกวัน <br>
+                ตั้งแต่เวลา 08.00 - 16.30 น.</strong>
+        </div>
+        <div class="info-item">
+            <span>สถานที่ตั้ง</span>
+            <strong>125 หมู่ 3 น้ำซึม เมืองอุทัยธานี อุทัยธานี 61000</strong>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 เว็บไซต์เพื่อการศึกษา
+
+</body>
+</html>

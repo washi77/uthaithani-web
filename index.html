@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uthai Thani: The Rhythm of Slow Life</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'uthai-green': '#3A4D39',
+                        'uthai-gold': '#D4A017',
+                        'uthai-cream': '#F3F4F6',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+        
+        /* Animation Classes */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .image-hover:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-black/50 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-white font-serif text-2xl tracking-widest font-bold">UTHAI.</a>
+            <div class="hidden md:flex space-x-8 text-white/90 text-sm tracking-wide uppercase">
+                <a href="#story" class="hover:text-uthai-gold transition">Story</a>
+                <a href="#destinations" class="hover:text-uthai-gold transition">Destinations</a>
+                <a href="#Food" class="hover:text-uthai-gold transition">Food</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://uthaithani.prd.go.th/th/file/get/file/20210811d41d8cd98f00b204e9800998ecf8427e143746.jpg" 
+                 class="w-full h-full object-cover object-center" 
+                 alt="Uthai Thani Scenery">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-stone-900"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 fade-in-up">
+            <span class="block text-uthai-gold tracking-[0.3em] uppercase text-sm mb-4 font-semibold">Unseen Thailand</span>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl text-white font-serif font-bold mb-6 leading-tight">
+                The Rhythm <br> <span class="italic font-light">of Slow Life</span>
+            </h1>
+            <p class="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto mb-10">
+                อุทัยธานี... ชีวิตเรียบง่ายสไตล์คนสะแกกรัง <br>
+                คืนสู่ธรรมชาติ และค้นพบตัวตนของคุณอีกครั้ง
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#destinations" class="bg-uthai-gold text-white px-8 py-3 rounded-full hover:bg-yellow-600 transition shadow-lg transform hover:scale-105">
+                    Explore Journey
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="story" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-8">More Than Just A Passage</h2>
+            <div class="w-16 h-1 bg-uthai-gold mx-auto mb-10"></div>
+            <p class="text-lg md:text-xl text-stone-600 leading-relaxed font-light">
+                "ในวันที่ทุกข์ใจหรือหมดกำลังใจ... <strong class="text-stone-800">อุทัยธานี</strong> ยังเป็นสถานที่ ที่โอบล้อมไปด้วย  <span class="text-uthai-green italic">ธรรมชาติ</span> ทำให้ผู้คนที่ได้มาที่นี่ได้พักใจ" มาที่นี่เพื่อเติมสิ่งที่ขาดหาย
+            </p>
+        </div>
+    </section>
+
+    <section id="destinations" class="py-24 px-6 bg-stone-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-stone-500 uppercase tracking-widest text-sm">Destinations</span>
+                <h2 class="text-4xl font-serif font-bold mt-2">Curated Experiences</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://palanla.com/ckeditor/upload/files/id37/domestic_location/Hup%20Pa%20Tat/009.jpg" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Nature</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">หุบป่าตาด</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">ก้าวผ่านปากถ้ำสู่ป่าดึกดำบรรพ์ยุคไดโนเสาร์ สัมผัสระบบนิเวศสุด Unseen ที่หาชมได้ยาก (The Jurassic Valley)</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="หุบป่าตาด.html">Read More -></a></span>
+                    </div>
+                </div>
+
+               
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%8B%E0%B8%B8%E0%B8%871.jpg" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Temple </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">วัดท่าซุง</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">วัดท่าซุงหรือวัดจันทาราม หนึ่งในวัดโบราณเก่าแก่ที่ห้ามพลาดของเมืองอุทัยธานี</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="วัดท่าซุง.html">Read More -></a></span>
+                    </div>
+                </div>  
+
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://aec10news.com/wp-content/uploads/2019/05/38b583516eb5c2e3d4af5ae22c6d48cf_XL.jpg" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Nature</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">ห้วยขาแข้ง</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">เขตรักษาพันธุ์สัตว์ป่าห้วยขาแข้ง มรดกโลก</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="ห้วยขาแข้ง.html">Read More -></a></span>
+                    </div>
+                </div>    
+                
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://image.makewebeasy.net/makeweb/0/1txnq8saC/DefaultData/uthai2_jpg.webp?v=202311151122" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Local </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">ถนนคนเดินตรอกโรงยา</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">คือชุมชนเก่าแก่ริมแม่น้ำสะแกกรัง จังหวัดอุทัยธานี เต็มไปด้วยบ้านไม้โบราณและวิถีชีวิตเรียบง่าย สะท้อนเสน่ห์วันวานของเมืองอย่างชัดเจน</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="ตรอกโรงยา.html">Read More -></a></span>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://www.paiduaykan.com/wp-content/uploads/2020/08/DSC02486-800x534.jpg" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Nature</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">จุดชมวิวบ้านชายเขา</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">ชมวิวภูเขา ทะเลหมอกยามเช้า และบรรยากาศเงียบสงบ ใกล้ชิดธรรมชาติ</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="บ้านชายเขา.html">Read More -></a></span>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://dmc.tatdataapi.io/assets/ea17503f-b5a5-463b-8c13-95f87b498057.jpeg" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Temple</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">วัดอุโปสถาราม</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">วัดเก่าแก่คู่เมืองอุทัยธานีมาตั้งแต่สมัยรัตนโกสินทร์ตอนต้น และเคยเป็นสถานที่รับเสด็จพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="วัดโบสถ์.html">Read More -></a></span>
+                    </div>
+                </div>  
+
+                 <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://ak-d.tripcdn.com/images/1mi1t2224ux2h3t000C9C_W_640_0_R5_Q80.jpg?proc=source/trip" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Temple</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">วัดสังกัสรัตนคีรี</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">วัดเก่าแก่คู่เมืองอุทัยธานีมาตั้งแต่สมัยรัตนโกสินทร์ตอนต้น และเคยเป็นสถานที่รับเสด็จพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="วัดสังกัสรัตนคีรี.html">Read More -></a></span>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="h-64 overflow-hidden image-hover relative">
+                        <img src="https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT610004/1.jpeg" class="w-full h-full object-cover transition duration-700 ease-in-out" alt="Hup Pa Tat">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded">Nature</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold mb-3">น้ำตกร่มผาเย็น</h3>
+                        <p class="text-stone-600 mb-4 line-clamp-3">น้ำตกผาร่มเย็น ที่เที่ยวอุทัยธานี น้ำตกสวย สายฝนจากผืนดิน</p>
+                        <span class="text-uthai-gold font-semibold text-sm uppercase tracking-wider group-hover:underline"><a href="น้ำตกผาร่มเย็น.html">Read More -></a></span>
+                    </div>
+                </div>  
+</section>
+
+<section id="Food" class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto text-center">
+        <span class="text-stone-500 uppercase tracking-widest text-sm">Food</span>
+        <h2 class="text-4xl font-serif font-bold mt-2 mb-8">
+            Local Taste of Uthai Thani
+        </h2>
+
+        <p class="text-lg text-stone-600 font-light max-w-3xl mx-auto">
+            สัมผัสรสชาติอาหารพื้นถิ่นของอุทัยธานี  
+            เรียบง่าย แต่เต็มไปด้วยเสน่ห์และเรื่องราวของชุมชน
+        </p>
+    </div>
+
+</section>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+
+        <!-- Card 1 -->
+        <article class="bg-stone-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+            <img src="https://image.makewebeasy.net/makeweb/r_1400x1400/1txnq8saC/SirikulBakery/messageImage_1710750749427.jpg?v=202405291424"
+                 class="w-full h-56 object-cover"
+                 alt="ร้านสิริกุลเบเกอรี่">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    ร้านสิริกุลเบเกอรี่
+                </h3>
+
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                    ร้านเบเกอรี่เก่าแก่คู่เมืองอุทัยธานี
+                    ขนมปังสูตรดั้งเดิม หอม นุ่ม
+                    ที่ใครมาแล้วต้องแวะ
+                </p>
+
+                <div class="flex items-center justify-between text-xs text-stone-500">
+                    <span class="bg-stone-200 px-3 py-1 rounded-full">
+                        ของกิน-ของฝาก อุทัยธานี
+                    </span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-stone-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+            <img src="https://image.makewebeasy.net/makeweb/0/1txnq8saC/KHAONEWMOON/a48a80f611904344bf86dd88e0c608f8.jpg?v=202405291424"
+                 class="w-full h-56 object-cover"
+                 alt="ข้าวเหนียวมูนแม่ศรีนวล">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    ข้าวเหนียวมูน แม่ศรีนวล (อุทัยธานี)
+                </h3>
+
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                    ข้าวเหนียวมูนสูตรโบราณ
+                    หวานมันกำลังดี พิกัด ร้านตั้งขายอยู่บริเวณวงเวียนน้ำพุ หน้าร้านKT optics
+                     ขายเฉพาะช่วงเช้าตั้งแต่ประมาณตี5ครึ่ง ไม่เกิน9-10โมงก็หมดแล้ว
+
+
+                </p>
+
+                <div class="flex items-center justify-between text-xs text-stone-500">
+                    <span class="bg-stone-200 px-3 py-1 rounded-full">
+                        ของกิน-ของฝาก อุทัยธานี
+                    </span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="bg-stone-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+            <img src="https://image.makewebeasy.net/makeweb/r_1400x1400/1txnq8saC/PatorPhatung/331297980_600005851572501_6344848272381538526_n.jpg?v=202405291424"
+                 class="w-full h-56 object-cover"
+                 alt="ผ้าทอลายโบราณบ้านผาทั่ง">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    ผ้าทอลายโบราณบ้านผาทั่ง
+                </h3>
+
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                    งานหัตถกรรมท้องถิ่นที่สืบทอดจากรุ่นสู่รุ่น
+                    ลวดลายสะท้อนอัตลักษณ์ของชุมชน
+                </p>
+
+                <div class="flex items-center justify-between text-xs text-stone-500">
+                    <span class="bg-stone-200 px-3 py-1 rounded-full">
+                        ของกิน-ของฝาก อุทัยธานี
+                    </span>
+                </div>
+            </div>
+        </article>
+
+                <article class="bg-stone-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+            <img src="https://image.makewebeasy.net/makeweb/0/1txnq8saC/MEAPUARUNG/a8357c26edc9429c9b883594e71e703f.jpg?v=202311151122"
+                 class="w-full h-56 object-cover"
+                 alt="ร้านแม่ป่วยลั้ง อุทัยธานี">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    ร้านแม่ป่วยลั้ง อุทัยธานี
+                </h3>
+
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                    ร้านอาหารพื้นบ้านชื่อดังของอุทัยธานี  
+            เมนูเด็ดอย่างปลาแม่น้ำ ผัดเผ็ด แกงป่า  
+            รสชาติจัดจ้านแบบบ้าน ๆ แต่กินแล้วไม่ลืม
+                </p>
+
+                <div class="flex items-center justify-between text-xs text-stone-500">
+                    <span class="bg-stone-200 px-3 py-1 rounded-full">
+                        ของกิน-ของฝาก อุทัยธานี
+                    </span>
+                </div>
+            </div>
+        </article>
+
+         <article class="bg-stone-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+            <img src="https://img.wongnai.com/p/1920x0/2021/12/23/3c35169648bd43c981605068b8b9337b.jpg"
+                 class="w-full h-56 object-cover"
+                 alt="ร้านไพพรรณ อุทัยธานี">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    ร้านไพพรรณ อุทัยธานี
+                </h3>
+
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                    เป็นร้านดั้งเดิมและเป็นร้านแรกที่สร้างชื่อเสียงให้ จ.อุทัยธานี คุณไพพรรณ วัฒนะพานิช ขายมาแล้วเกือบ 50 ปี โดยได้สูตรทำขนมปังปอนด์จากมิชชันนารีชาวออสเตรเลีย และพัฒนาสูตรฉีดไส้สังขยาเข้าไป 
+                    ปัจจุบันขายโดยทายาทรุ่นลูก ผลิตและมีวางขายเพียงที่เดียว ไม่มีสาขาและแฟรนไชส์
+                </p>
+
+                <div class="flex items-center justify-between text-xs text-stone-500">
+                    <span class="bg-stone-200 px-3 py-1 rounded-full">
+                        ของกิน-ของฝาก อุทัยธานี
+                    </span>
+                </div>
+            </div>
+        </article>
+
+                <article class="bg-stone-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+            <img src=https://image.makewebeasy.net/makeweb/0/1txnq8saC/RattanaHomuthai/messageImage_1710750046061.jpg?v=202405291424"
+                 class="w-full h-56 object-cover"
+                 alt="หอมอุทัย รัตนวารี">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    หอมอุทัย รัตนวารี
+                </h3>
+
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                    น้ำสมุนไพรสีแดง ใช้เหยาะลงน้ำดื่มเล็กน้อย เพิ่มความหอมสดชื่นจากแก่นฝาง และสมุนไพรกว่า 10 ชนิด 
+                    ช่วยบำรุงเลือด แก้ร้อนใน และมีมีฤทธิ์เย็น ช่วยให้ร่างกายเย็นลง 
+                    เหมาะมากกับอากาศร้อนๆ แบบบ้านเราสุดๆ ขวดใหญ่สะใจ กินได้นานเป็นเดือน
+                </p>
+
+                <div class="flex items-center justify-between text-xs text-stone-500">
+                    <span class="bg-stone-200 px-3 py-1 rounded-full">
+                        ของกิน-ของฝาก อุทัยธานี
+                    </span>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+
+
+
